@@ -1,0 +1,88 @@
+.header {
+    background-color:#FFC2F0;
+    color:yellow;
+	width:98%;
+    padding:10px;
+	text-align:left;	
+	background-image: url('../images/headerbck.png');
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+	
+}
+.section {   
+    padding:200px;	
+}
+.footer {
+    color:black;
+	width:99%;
+    clear:both;
+    text-align:right; 
+	font-size: 40%;
+	background-image: url('../images/footer.png');
+	background-size: 100% 100%;
+}
+.floatRight {
+    float: right;
+}
+body {
+    font-size: 200%;
+	font-family:verdana;
+	height:100%;
+}
+.buttonStyle {
+border: 2px solid #a1a1a1;
+background: #dddddd;
+width: 100px;
+border-radius: 25px;
+}
+
+.navigation, .content {
+	
+	font-size: 40%;
+}
+.navigation {
+	width:200px;
+	border:1px solid black;
+	float:left;
+	margin:12;
+}
+.content {
+	margin-left:210px;
+}
+.clear {
+	clear:left;
+}
+ul {
+    list-style: none;
+}
+
+ul li {
+    width: 35px;
+    height: 35px;   
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: -5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul li:hover {
+    color: black;
+}
+
+.inputStyle {
+border: 2px solid #a1a1a1;
+width: 700px;
+border-radius: 35px;
+}
+
+.deletebutton {
+  background-image: url('../images/DeleteRed.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor:pointer;
+}

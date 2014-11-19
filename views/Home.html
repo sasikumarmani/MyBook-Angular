@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="../mybook/styles/feed.css"/>
+<link rel="stylesheet" href="../mybook/styles/profile.css"/>
+</head>
+
+<body onload="init()" ng-controller="homeController"> 
+<div class ="header ">
+
+My Book
+<div class ="floatRight">
+	<button class ="buttonStyle" type="button" onclick= "logout()" >Sign Out</button> 
+</div>
+</div>
+
+<div class="navigation">
+		<ul>
+			<li onmousedown="loadFeeds()" id ="feedMenu" >Feed</li><br>
+			<li onmousedown="loadProfile()"  id ="profileMenu" >Profile</li>
+		</ul>
+</div>
+
+<div class="content">
+	<div id="feedDetails" >	
+		<br>	
+		<input type = "text"  class ="inputStyle" id="feedValue">
+		<button class ="buttonStyle" type="button" onclick= "addRow()" >Post</button> <br>
+		<div id="myExample">	
+			<div id="mydata">	
+				<table id="myTableData"   cellpadding="2">			
+				</table>
+			&nbsp;<br/>
+			</div>
+	
+		</div>
+		
+	</div> 
+	
+	<div id="profileDetails" class ="profileDetails" >
+		
+		<table >
+		<tr><td>
+			<div id="profile">
+				<form id="profileForm">
+				<br>
+					<img src="../images/MandatoryStar.png" alt="Smiley face" height="10" width="10" >
+					<input 	class ="profileinputStyle"  type="value" id="name" placeholder="Name" onkeyup="SetButtonStatus()" ></input></br></br>
+					<img src="../images/MandatoryStar.png" alt="Smiley face" height="10" width="10">
+					<input 	class ="profileinputStyle"  type="number" id="age" placeholder="Age" onkeyup="SetButtonStatus()"  ></input></br></br>
+					<img src="../images/MandatoryStar.png" alt="Smiley face" height="10" width="10">
+					<input  class ="profileinputStyle" type="number" id="phone" placeholder="Phone" onkeyup="SetButtonStatus()"  >
+					</input></br></br>
+					<img src="../images/MandatoryStar.png" alt="Smiley face" height="10" width="10">
+					<input  class ="profileinputStyle" type="email" id="email" placeholder="Email" onkeyup="SetButtonStatus()"  ></input></br></br>
+					<img src="../images/MandatoryStar.png" alt="Smiley face" height="10" width="10">
+					<textarea class ="" id="address"rows="5" cols="25" placeholder = " Address" onkeyup="SetButtonStatus()"  ></textarea>
+					<input  class ="profileinputStyle" type="hidden" id="image-value" name="selected_image" value="" /></br></br>					
+					<input  class ="profileinputStyle"  type="file" id="profilePic" accept="image/*" onchange="showProfilePicture(this)" name="file"></br></br>
+					<input  class ="profilebuttonStyle" type="submit" name="button" id="saveProfile" value="Save" onClick="saveProfile()" />
+				</form>
+			</div>
+			</td>
+			<td>
+			<div id="profilePictureDiv" class ="profilePicture">
+				<img id="profilePicture" height="220" width="200" />
+			</div>
+			</td>
+		</tr>
+		</table>
+
+	</div>
+</div>
+	
+<div class="footer">
+Copyright © Object-Frontier.com
+</div>
+</body>
+</html>

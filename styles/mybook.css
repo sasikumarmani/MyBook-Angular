@@ -1,0 +1,55 @@
+.header {
+    background-color:#FFC2F0;
+	width:98%;
+    padding:18px;
+	text-align:left;	
+	background-image: url('../images/headerbck.png');
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+	
+}
+.section {   
+    padding:200px;	
+	background-size: 90% 90%;
+	width:99%;
+    background-repeat: no-repeat;		
+	background-image: url('../images/mybookmain.png');
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.footer {
+    color:black;
+	width:99%;
+    clear:both;
+    text-align:right; 
+	font-size: 40%;
+	background-image: url('../images/footer.png');
+	background-size: 100% 100%;
+}
+.floatRight {
+    float: right;
+}
+body {
+    font-size: 200%;
+	font-family:calibri;
+	height:100%;
+}
+.buttonStyle {
+border: 2px solid #a1a1a1;
+background: #6495ED;
+width: 100px;
+border-radius: 5px;
+}
+
+.inputStyle {
+border: 2px solid #a1a1a1;
+width: 200px;
+border-radius: 3px;
+}
+.floatLeft {
+    float: left;
+	color:#6495ED;
+    font-size: 100%;
+	font-family:calibri;
+	height:100%;
+}

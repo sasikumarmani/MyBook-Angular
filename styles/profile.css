@@ -1,0 +1,27 @@
+.profilebuttonStyle {
+border: 2px solid #a1a1a1;
+background: #dddddd;
+width: 100px;
+border-radius: 25px;
+}
+
+.profileinputStyle {
+border: 2px solid #a1a1a1;
+display: inline-block;
+width: 200px;
+border-radius: 35px;
+}
+
+.profileDetails {
+ padding:10px;
+ 
+}
+textarea{
+        resize:none;
+    }
+	
+	
+.profilePicture{
+float:right;
+padding:50px;
+}
