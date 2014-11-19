@@ -7,11 +7,11 @@
 </head>
 
 <body onload="init()" ng-controller="homeController"> 
-<div class ="header ">
+<div class ="pageheader">
 
 My Book
 <div class ="floatRight">
-	<button class ="buttonStyle" type="button" onclick= "logout()" >Sign Out</button> 
+	<button class ="buttonStyle" type="button" ng-click= "logout()" >Sign Out</button> 
 </div>
 </div>
 
@@ -25,18 +25,17 @@ My Book
 <div class="content">
 	<div id="feedDetails" >	
 		<br>	
-		<input type = "text"  class ="inputStyle" id="feedValue">
-		<button class ="buttonStyle" type="button" onclick= "addRow()" >Post</button> <br>
+		<input type = "text"  class ="inputStyle"  ng-model="feedValue" id="feedValue">
+		<button class ="buttonStyle" type="button" ng-click= "addPost()" >Post</button> <br>
 		<div id="myExample">	
 		        
         <table ng-table="tableParams" class="table">
-        <tr ng-repeat="user in $data">
-		    <td data-title=""><img src="../mybook/images/profile.png" alt="profile" height="60" width="80" ></td>
-            <td data-title="'Post Name'">{{user.name}}</td>
-            <td data-title="'Created Date'">{{user.age}}</td>
+        <tr ng-repeat="feed in $data">
+		   <!-- <td data-title=""><img src="../mybook/images/profile.png" alt="profile" height="60" width="80" ></td> -->
+            <td data-title="'Post Name'">{{feed}}</td>
+            <td data-title="'Created Date'">{{feed.time}}</td>		
         </tr>
-        </table>
-	
+        </table>	
 		</div>		
 	</div> 	
 </div>
