@@ -1,5 +1,5 @@
 "use strict";
-var myBookApp = angular.module('myBookApp', []);
+var myBookApp = angular.module('myBookApp', ['ngTable']);
 
 myBookApp.config(['$routeProvider',
   function($routeProvider) {
